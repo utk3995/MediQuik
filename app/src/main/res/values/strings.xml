@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">test1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_donormap">Map</string>
+    <string name="title_activity_docmap">Map</string>
+    <color name="bg_color">#ffffff</color>
+</resources>
