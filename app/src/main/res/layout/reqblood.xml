@@ -2,18 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/jhj">
+    android:id="@+id/jhj"
+    android:background="@drawable/all">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Blood Group"
-        android:id="@+id/textView8" />
+        android:id="@+id/textView8"
+        android:textColor="#000000"
+        android:layout_marginTop="40dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#ff0000"
         android:id="@+id/bg" />
 
     <TextView
@@ -21,24 +25,30 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Units"
-        android:id="@+id/u" />
+        android:textColor="#000000"
+        android:id="@+id/u"
+        android:layout_marginTop="10dp" />
 
     <EditText
+        android:textColor="#ff0000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/units" />
 
     <TextView
         android:layout_width="wrap_content"
+        android:textColor="#000000"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Location"
-        android:id="@+id/l" />
+        android:id="@+id/l"
+        android:layout_marginTop="10dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loc"
+        android:textColor="#ff0000"
         android:layout_gravity="center_horizontal" />
 
     <Button
@@ -48,5 +58,8 @@
         android:text="Find Donors"
         android:id="@+id/find"
         android:layout_gravity="center_horizontal"
-        android:onClick="find" />
+        android:onClick="find"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="40dp" />
 </LinearLayout>

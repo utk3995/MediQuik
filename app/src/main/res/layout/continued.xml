@@ -2,37 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="onclick">
+    android:onClick="onclick"
+    android:background="@drawable/login">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Address"
-        android:id="@+id/add" />
+        android:id="@+id/add"
+        android:layout_marginTop="28dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Date of Birth"
-        android:id="@+id/dob" />
+        android:id="@+id/dob"
+        android:layout_marginTop="28dp" />
 
     <EditText
         android:hint="Age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/age" />
+        android:id="@+id/age"
+        android:layout_marginTop="28dp" />
 
     <EditText
         android:hint="Sex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sex" />
+        android:id="@+id/sex"
+        android:layout_marginTop="28dp" />
 
     <EditText
         android:hint="Blood Group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bg" />
+        android:id="@+id/bg"
+        android:layout_marginTop="28dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -40,7 +46,10 @@
         android:layout_height="wrap_content"
         android:text="Done !"
         android:id="@+id/done"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:layout_gravity="center_horizontal"
-        android:onClick="onclick" />
+        android:onClick="onclick"
+        android:layout_marginTop="40dp" />
 
 </LinearLayout>

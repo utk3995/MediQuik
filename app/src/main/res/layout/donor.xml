@@ -2,37 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/all">
+    android:background="@drawable/donation">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Do you want to be a Blood Donor?"
-        android:id="@+id/textView7"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
-        android:textColor="black" />
+        android:id="@+id/imageView" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
+        android:layout_width="235dp"
         android:layout_height="wrap_content"
         android:text="Yes"
         android:id="@+id/yes"
         android:textColor="#ff0000"
         android:background="@drawable/buttonshape"
         android:onClick="yes"
-        android:layout_marginTop="70dp" />
+        android:layout_marginTop="360dp"
+        android:layout_gravity="center_horizontal" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
+        android:layout_width="235dp"
         android:layout_height="wrap_content"
         android:text="No"
         android:textColor="#ff0000"
         android:background="@drawable/buttonshape"
         android:id="@+id/no"
         android:onClick="no"
-        android:layout_marginTop="20dp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp" />
 </LinearLayout>
