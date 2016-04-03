@@ -24,6 +24,12 @@ public class continued extends AppCompatActivity {
     String age1,sex1,dob1,bg1,addr1;
     double lat = -1,lon=-1;
     protected void onCreate(Bundle savedInstanceState) {
+        //Remove title bar
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+//Remove notification bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.continued);
         age = (EditText) findViewById(R.id.age);

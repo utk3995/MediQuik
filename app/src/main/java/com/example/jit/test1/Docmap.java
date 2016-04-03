@@ -64,7 +64,8 @@ public class Docmap extends FragmentActivity {
         clat=user.getDouble("lat");
         clon=user.getDouble("long");
 
-        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker456)));;
+
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("_User");
 
@@ -80,7 +81,8 @@ public class Docmap extends FragmentActivity {
                         String ishe = product.get("doc").toString();
 
                         if (ishe.equalsIgnoreCase("true") && distance(clat, clon, lat, lon, "K") <= 30 && clat != lat) {
-                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(product.get("username").toString()).snippet(product.get("email").toString()));
+                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(product.get("username").toString()).snippet(product.get("email").toString()).icon(BitmapDescriptorFactory.fromResource(R.drawable.marker123)));;
+
                             TO[i++] = product.get("email").toString();
                         }
 

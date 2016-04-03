@@ -6,6 +6,8 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +36,12 @@ public class Donormap extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Remove title bar
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+//Remove notification bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donormap);
         Bundle bundle = getIntent().getExtras();
@@ -67,7 +75,7 @@ public class Donormap extends FragmentActivity {
         clat=user.getDouble("lat");
         clon=user.getDouble("long");
 
-        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker456)));;
 
 
 
@@ -94,7 +102,8 @@ public class Donormap extends FragmentActivity {
                         if (ishe.equalsIgnoreCase("true") && distance(clat, clon, lat, lon, "K") <= 30 && clat!=lat) {
 
 
-                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(donor.get("username").toString()).snippet(donor.get("email").toString()));
+                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(donor.get("username").toString()).snippet(donor.get("email").toString()).icon(BitmapDescriptorFactory.fromResource(R.drawable.marker123)));;
+
 
                             TO[i++]=donor.get("email").toString();
                         }

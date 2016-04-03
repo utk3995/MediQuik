@@ -30,35 +30,35 @@
         </activity>
         <activity
             android:name=".Startpage"
-            android:label="Startpage" >
+            android:label="Login/Register" >
         </activity>
         <activity
             android:name=".registration"
-            android:label="registartion" >
+            android:label="Registartion...." >
         </activity>
         <activity
             android:name=".homepage"
-            android:label="homepage" >
+            android:label="Home" >
         </activity>
         <activity
             android:name=".continued"
-            android:label="continued" >
+            android:label="Registration...." >
         </activity>
         <activity
             android:name=".doctor"
-            android:label="doctor" >
+            android:label="Do you want to be a voluntary doctor?" >
         </activity>
         <activity
             android:name=".motivation"
-            android:label="motivation" >
+            android:label="Do you want to donate blood?" >
         </activity>
         <activity
             android:name=".donor"
-            android:label="donor" >
+            android:label="Do you want to donate blood?" >
         </activity>
         <activity
             android:name=".reqblood"
-            android:label="reqblood" >
+            android:label="Blood Details" >
         </activity>
 
         <meta-data
@@ -78,20 +78,20 @@
         </activity>
         <activity
             android:name=".voldoc"
-            android:label="voldoc" >
+            android:label="Do you want to volunteer as a doctor?" >
         </activity>
 
         <activity
             android:name=".profilepage"
-            android:label="profilepage" >
+            android:label="Profile" >
         </activity>
         <activity
             android:name=".profilepage1"
-            android:label="profilepage1" >
+            android:label="Profile" >
         </activity>
         <activity
             android:name=".fdoc"
-            android:label="fdoc" >
+            android:label="Please Give your emergency...." >
         </activity>
     </application>
 
