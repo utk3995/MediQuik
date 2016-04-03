@@ -113,7 +113,7 @@ public class Donormap extends FragmentActivity {
                     emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
                     emailIntent.putExtra(Intent.EXTRA_CC, CC);
                     emailIntent.putExtra(Intent.EXTRA_SUBJECT, "MediQuik - EMERGENCY "+bg+" BLOOD NEEDED");
-                    emailIntent.putExtra(Intent.EXTRA_TEXT, unit+" units of "+bg+" are immediately needed \n Name : "+user.get("username").toString()+"\n Phone Number : "+user.get("phone").toString());
+                    emailIntent.putExtra(Intent.EXTRA_TEXT, " "+unit+" units of "+bg+" Blood Group are immediately needed \n\n Name : "+user.get("username").toString()+"\n Phone Number : "+user.get("phone").toString());
 
                     try {
                         startActivity(Intent.createChooser(emailIntent, "Send mail..."));
