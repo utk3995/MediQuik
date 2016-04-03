@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="onclick"
-    android:background="@drawable/login">
+
+    android:background="@drawable/login"
+    android:id="@+id/gg">
 
     <EditText
         android:layout_width="match_parent"
@@ -49,7 +50,7 @@
         android:textColor="#ff0000"
         android:background="@drawable/buttonshape"
         android:layout_gravity="center_horizontal"
-        android:onClick="onclick"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="40dp"
+        android:onClick="onclick" />
 
 </LinearLayout>
