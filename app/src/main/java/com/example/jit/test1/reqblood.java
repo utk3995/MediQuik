@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.parse.ParseUser;
+
 
 public class reqblood extends AppCompatActivity {
     EditText bg,unit,addr;
@@ -21,10 +23,12 @@ public class reqblood extends AppCompatActivity {
     }
 
     public void find(View view){
+
         Bundle b= new Bundle();
         b.putString("bg",bg.getText().toString());
         b.putString("unit", unit.getText().toString());
         b.putString("addr",addr.getText().toString());
+
         Intent intent = new Intent(
 
                 reqblood.this,

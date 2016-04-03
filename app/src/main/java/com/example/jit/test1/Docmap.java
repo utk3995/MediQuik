@@ -119,7 +119,9 @@ public class Docmap extends FragmentActivity {
                     }
 
                     // MAIL
+                    
                     Log.i("Send email", "");
+                    ParseUser user=ParseUser.getCurrentUser();
                     Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
                     emailIntent.setData(Uri.parse("mailto:"));
@@ -127,7 +129,7 @@ public class Docmap extends FragmentActivity {
                     emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
                     emailIntent.putExtra(Intent.EXTRA_CC, CC);
                     emailIntent.putExtra(Intent.EXTRA_SUBJECT, "MediQuik - EMERGENCY DOCTOR NEEDED");
-                    emailIntent.putExtra(Intent.EXTRA_TEXT, note);
+                    emailIntent.putExtra(Intent.EXTRA_TEXT, "Name : "+user.get("username").toString()+"\n Phone Number : "+user.get("phone").toString()+"\n Note :\n"+note+"\n");
 
                     try {
                         startActivity(Intent.createChooser(emailIntent, "Send mail..."));
@@ -180,5 +182,5 @@ public class Docmap extends FragmentActivity {
     private static double rad2deg(double rad) {
         return (rad * 180 / Math.PI);
     }
-    
+
 }

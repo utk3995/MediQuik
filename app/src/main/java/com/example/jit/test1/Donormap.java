@@ -105,7 +105,7 @@ public class Donormap extends FragmentActivity {
                     }
 
                     // MAIL
-
+                    ParseUser user=ParseUser.getCurrentUser();
                     Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
                     emailIntent.setData(Uri.parse("mailto:"));
@@ -113,7 +113,7 @@ public class Donormap extends FragmentActivity {
                     emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
                     emailIntent.putExtra(Intent.EXTRA_CC, CC);
                     emailIntent.putExtra(Intent.EXTRA_SUBJECT, "MediQuik - EMERGENCY "+bg+" BLOOD NEEDED");
-                    emailIntent.putExtra(Intent.EXTRA_TEXT, unit+" units of "+bg+" are immediately needed at "+addr+"\n");
+                    emailIntent.putExtra(Intent.EXTRA_TEXT, unit+" units of "+bg+" are immediately needed \n Name : "+user.get("username").toString()+"\n Phone Number : "+user.get("phone").toString());
 
                     try {
                         startActivity(Intent.createChooser(emailIntent, "Send mail..."));
