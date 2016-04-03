@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/all">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Write a Short note to the Doctor :"
-        android:id="@+id/textView12" />
+        android:id="@+id/textView12"
+        android:layout_marginTop="100dp"
+        android:textColor="black" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/note"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Find"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:id="@+id/find"
         android:layout_gravity="center_horizontal"
-        android:onClick="find" />
+        android:onClick="find"
+        android:layout_marginTop="40dp" />
 </LinearLayout>

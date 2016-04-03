@@ -9,7 +9,8 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:hint="Name"
-        android:id="@+id/name" />
+        android:id="@+id/name"
+        android:layout_marginTop="40dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -17,7 +18,8 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:hint="Email"
-        android:id="@+id/email" />
+        android:id="@+id/email"
+        android:layout_marginTop="15dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -25,7 +27,8 @@
         android:inputType="phone"
         android:ems="10"
         android:hint="Phone"
-        android:id="@+id/phone" />
+        android:id="@+id/phone"
+        android:layout_marginTop="15dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -33,15 +36,19 @@
         android:inputType="textPassword"
         android:ems="10"
         android:hint="Password"
-        android:id="@+id/password" />
+        android:id="@+id/password"
+        android:layout_marginTop="15dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:text="Get started"
         android:id="@+id/start"
         android:layout_gravity="center_horizontal"
-        android:onClick="clickoff" />
+        android:onClick="clickoff"
+        android:layout_marginTop="50dp" />
 
 </LinearLayout>

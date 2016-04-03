@@ -1,52 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/all">
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Donor"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:id="@+id/don"
         android:onClick="donor"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:text="Request Blood"
         android:id="@+id/reqblood"
         android:layout_gravity="center_horizontal"
-        android:onClick="reqblood" />
+        android:onClick="reqblood"
+        android:layout_marginTop="25dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:text="Voluteer as a Doctor"
         android:id="@+id/vdoc"
         android:layout_gravity="center_horizontal"
-        android:onClick="vdoc" />
+        android:onClick="vdoc"
+        android:layout_marginTop="25dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Find a Doctor"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:id="@+id/fdoc"
         android:layout_gravity="center_horizontal"
-        android:onClick="fdoc" />
+        android:onClick="fdoc"
+        android:layout_marginTop="25dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Profile Page"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:id="@+id/pp"
         android:layout_gravity="center_horizontal"
-        android:onClick="pp" />
+        android:onClick="pp"
+        android:layout_marginTop="25dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -54,6 +70,9 @@
         android:layout_height="wrap_content"
         android:text="Logout"
         android:id="@+id/logout"
+        android:textColor="#ff0000"
+        android:background="@drawable/buttonshape"
         android:layout_gravity="center_horizontal"
-        android:onClick="logout" />
+        android:onClick="logout"
+        android:layout_marginTop="25dp" />
 </LinearLayout>
