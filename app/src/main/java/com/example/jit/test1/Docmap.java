@@ -2,6 +2,7 @@ package com.example.jit.test1;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.Uri;
@@ -62,7 +63,8 @@ public class Docmap extends FragmentActivity {
         ParseUser user = ParseUser.getCurrentUser();
         clat=user.getDouble("lat");
         clon=user.getDouble("long");
-        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker2)));
+
+        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me"));
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("_User");
 
@@ -78,7 +80,7 @@ public class Docmap extends FragmentActivity {
                         String ishe = product.get("doc").toString();
 
                         if (ishe.equalsIgnoreCase("true") && distance(clat, clon, lat, lon, "K") <= 30 && clat != lat) {
-                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(product.get("username").toString()).snippet(product.get("email").toString()).icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
+                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(product.get("username").toString()).snippet(product.get("email").toString()));
                             TO[i++] = product.get("email").toString();
                         }
 
