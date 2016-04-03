@@ -4,7 +4,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:onClick="onclick1"
     android:background="@drawable/login">
 
     <EditText
@@ -58,5 +57,6 @@
         android:layout_alignLeft="@+id/login"
         android:layout_alignStart="@+id/login"
         android:layout_alignRight="@+id/login"
-        android:layout_alignEnd="@+id/login" />
+        android:layout_alignEnd="@+id/login"
+        android:onClick="onclick1" />
 </RelativeLayout>

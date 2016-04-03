@@ -16,30 +16,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
-        final boolean _active = true;
-        final int _splashTime = 10000;
-
-        // WAIT
-        Thread splashTread = new Thread() {
-            @Override
-            public void run() {
-                try {
-                    int waited = 0;
-                    while((waited < _splashTime)) {
-                        sleep(100);
-                        if(_active) {
-                            waited += 100;
-                        }
-                    }
-                } catch(InterruptedException e) {
-                    // do nothing
-                } finally {
-                    finish();
-
-                }
-            }
-        };
-        splashTread.start();
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {

@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -66,7 +67,7 @@ public class Donormap extends FragmentActivity {
         clat=user.getDouble("lat");
         clon=user.getDouble("long");
 
-        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker2)));
 
 
 
@@ -93,7 +94,7 @@ public class Donormap extends FragmentActivity {
                         if (ishe.equalsIgnoreCase("true") && distance(clat, clon, lat, lon, "K") <= 30 && clat!=lat) {
 
 
-                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(donor.get("username").toString()).snippet(donor.get("email").toString()));
+                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(donor.get("username").toString()).snippet(donor.get("email").toString()).icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
 
                             TO[i++]=donor.get("email").toString();
                         }

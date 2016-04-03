@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -61,7 +62,7 @@ public class Docmap extends FragmentActivity {
         ParseUser user = ParseUser.getCurrentUser();
         clat=user.getDouble("lat");
         clon=user.getDouble("long");
-        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(clat, clon)).title("Me").icon(BitmapDescriptorFactory.fromResource(R.drawable.marker2)));
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("_User");
 
@@ -77,7 +78,7 @@ public class Docmap extends FragmentActivity {
                         String ishe = product.get("doc").toString();
 
                         if (ishe.equalsIgnoreCase("true") && distance(clat, clon, lat, lon, "K") <= 30 && clat != lat) {
-                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(product.get("username").toString()).snippet(product.get("email").toString()));
+                            mMap.addMarker(new MarkerOptions().position(new LatLng(lat, lon)).title(product.get("username").toString()).snippet(product.get("email").toString()).icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
                             TO[i++] = product.get("email").toString();
                         }
 

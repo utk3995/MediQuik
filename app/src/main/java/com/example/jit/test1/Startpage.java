@@ -56,6 +56,7 @@ public class Startpage extends AppCompatActivity {
     }
 
     public void onclick1(View view){
+
         Intent intent = new Intent(
                 Startpage.this,
                 registration.class);
