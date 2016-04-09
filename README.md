@@ -5,7 +5,7 @@ So why not connect these two? The objective of our hack is connecting these need
 
 We dreamt of a platform where people can volunteer for blood donation, doctors can volunteer for the people in times of emergency for the people in need around them. 
 
-Accomplished : 
+Accomplished  : 
 
 1. People can volunteer by registering with the app and giving the blood group and other standard details.
 
